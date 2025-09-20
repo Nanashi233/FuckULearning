@@ -70,6 +70,32 @@ async function playAllVideos() {
                 playButton.click();
                 console.log(`已点击播放按钮，开始播放视频：${videoId}`);
 
+                // 点击二倍速播放按钮
+                try {
+                    await sleep(1000); // 等待播放器加载
+                    const speedButton = document.querySelector(`#${videoId} label.mejs__speed-selector-label.mejs__speed-selected`);
+                    if (speedButton && speedButton.textContent === '2.00x') {
+                        console.log(`当前已是二倍速播放：${videoId}`);
+                    } else {
+                        // 如果当前不是2倍速，尝试寻找并点击2倍速选项
+                        const speedSelector = document.querySelector(`#${videoId} .mejs__speed-selector`);
+                        if (speedSelector) {
+                            const allSpeedOptions = speedSelector.querySelectorAll('label.mejs__speed-selector-label');
+                            for (const option of allSpeedOptions) {
+                                if (option.textContent.trim() === '2.00x') {
+                                    option.click();
+                                    console.log(`已切换到二倍速播放：${videoId}`);
+                                    break;
+                                }
+                            }
+                        } else {
+                            console.log(`未找到速度选择器，使用默认播放速度：${videoId}`);
+                        }
+                    }
+                } catch (error) {
+                    console.log(`设置播放速度时出错：${videoId}，错误：${error.message}`);
+                }
+
                 // 等待视频播放完成
                 let isFinished = false;
                 while (!isFinished) {
@@ -90,7 +116,7 @@ async function playAllVideos() {
                     // 检查视频是否播放完成
                     await sleep(1000);
                     console.log(`视频状态: currentTime=${realVideoElement.currentTime}, duration=${realVideoElement.duration}, ended=${realVideoElement.ended}`);
-                    if (realVideoElement.ended || realVideoElement.currentTime >= realVideoElement.duration - 1) {
+                    if (realVideoElement.ended || realVideoElement.currentTime >= realVideoElement.duration - 1 || realVideoElement.currentTime === 0) {
                         console.log(`视频 ${videoId} 播放完成`);
                         isFinished = true;
                         break;
