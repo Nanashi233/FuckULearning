@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         FuckUlearning
 // @description  优学院视频刷课脚本
-// @version      1.0.0
+// @version      1.0.1
 // @author       Nanashi
 // @match        *://ua.ulearning.cn/*
 // @icon         https://raw.githubusercontent.com/Nanashi-Development/FuckULearning/main/logo.jpg
