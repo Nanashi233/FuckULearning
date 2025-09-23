@@ -5,20 +5,13 @@
 // @author       Nanashi
 // @match        *://ua.ulearning.cn/*
 // @icon         https://raw.githubusercontent.com/Nanashi-Development/FuckULearning/main/logo.jpg
-// @updateURL    https://raw.githubusercontent.com/Nanashi-Development/FuckULearning/main/main.js
-// @downloadURL  https://raw.githubusercontent.com/Nanashi-Development/FuckULearning/main/main.js
+// @updateURL    https://update.greasyfork.org/scripts/550418/FuckUlearning.user.js
+// @downloadURL  https://update.greasyfork.org/scripts/550418/FuckUlearning.user.js
 // @supportURL   https://github.com/Nanashi-Development/FuckULearning/issues
 // @homepageURL  https://github.com/Nanashi-Development/FuckULearning
 // @grant        none
 // ==/UserScript==
 
-/**
- * GitHub 自动更新说明：
- * 1. 本脚本支持通过 GitHub 自动更新
- * 2. 更新源：https://github.com/Nanashi-Development/FuckULearning
- * 3. 油猴会定期检查版本更新，发现新版本时会提示用户更新
- * 4. 如需手动检查更新，请在油猴管理面板中右键脚本选择"检查更新"
- */
 
 // 等待函数
 function sleep(ms) {

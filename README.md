@@ -4,7 +4,7 @@
 
 ## 🚀 一键安装
 
-[![Install UserScript](https://img.shields.io/badge/Install-UserScript-green?style=for-the-badge&logo=tampermonkey)](https://raw.githubusercontent.com/Nanashi-Development/FuckULearning/main/main.js)
+[![Install UserScript](https://img.shields.io/badge/Install-UserScript-green?style=for-the-badge&logo=tampermonkey)](https://update.greasyfork.org/scripts/550418/FuckUlearning.user.js)
 
 点击上方按钮即可一键安装脚本到油猴 (Tampermonkey)
 
@@ -16,7 +16,7 @@
 - 📚 自动翻页到下一章节
 - 🎛️ 可视化控制面板
 - 📝 实时日志显示
-- 🔄 支持GitHub自动更新
+- 🔄 支持Greasyfork自动更新
 
 ## 🛠️ 安装步骤
 
@@ -27,7 +27,7 @@
 
 ### 2. 安装脚本
 点击上方的 **Install UserScript** 按钮，或者：
-1. 点击 [这里](https://raw.githubusercontent.com/Nanashi-Development/FuckULearning/main/main.js) 访问脚本源码
+1. 点击 [这里](https://github.com/Nanashi-Development/FuckULearning/blob/main/main.js) 访问脚本源码
 2. 复制所有代码
 3. 打开 Tampermonkey 管理面板
 4. 点击 "创建新脚本"
@@ -44,7 +44,7 @@
 
 ## 🔄 自动更新
 
-本脚本支持通过GitHub自动更新：
+本脚本支持通过Greasyfork自动更新：
 - 油猴会定期检查版本更新
 - 发现新版本时会自动提示用户更新
 - 也可手动在油猴管理面板中检查更新
@@ -53,7 +53,6 @@
 
 - 仅供学习交流使用，请勿用于违法用途
 - 使用前请确保已了解相关平台的使用规则
-- 建议在使用过程中适当控制频率，避免给服务器造成过大压力
 
 ## 🐛 问题反馈
 
